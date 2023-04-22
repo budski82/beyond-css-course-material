@@ -7,7 +7,6 @@ body {
   font-size: 1.75rem;
   font-family: system-ui, sans-serif;
   line-height: 1.6;
-
   /* this is being used to center the content on the screen */
   display: grid;
   height: 100vh;
@@ -21,8 +20,9 @@ body {
   padding: 2em;
 }
 
-h2.card__title{ color: #e76c00;}
-
+h2.card__title {
+  color: #e76c00;
+}
 
 .btn {
   display: inline-block;
@@ -34,3 +34,5 @@ h2.card__title{ color: #e76c00;}
   display: flex;
   gap: 1rem;
 }
+
+/*# sourceMappingURL=variable-challenge.css.map */
