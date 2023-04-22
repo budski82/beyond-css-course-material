@@ -1,9 +1,13 @@
+$bor: #e76c00;
+$col-n-1: #000;
+$col-n-9: #eee;
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
 body {
+  background: $col-n-1;
   font-size: 1.75rem;
   font-family: system-ui, sans-serif;
   line-height: 1.6;
@@ -19,15 +23,43 @@ body {
   gap: 0.75em;
   width: min(90%, 60rem);
   padding: 2em;
+  box-shadow: 0rem 0rem 2.6rem #222;
+
+    &__title{color:#e76c00;
+    
+      &:hover{box-shadow:inset 0.1rem 0.1rem 0.8rem .2rem #e5d8d477;
+      padding-left: 6rem;}
+    }
 }
 
-h2.card__title{ color: #e76c00;}
+
 
 
 .btn {
   display: inline-block;
   padding: 0.5em 1.5em;
   text-decoration: none;
+  border-radius: .5rem;
+
+    &--primary{
+      background: #e76c00;
+      border: none;
+      color:#fef;
+}
+
+    &--outline{
+      background: #ffffff;
+      border: 0.125rem solid #ee4614;
+      color:#e76c00
+}
+
+    &:hover,
+    &:focus{
+      background: #000;
+      color:#fef;
+      border: 0.125rem solid #ee4614;
+      box-shadow: 0rem 0rem .9rem #e76c00;
+}
 }
 
 .flex-group {

@@ -4,6 +4,7 @@
 }
 
 body {
+  background: #000;
   font-size: 1.75rem;
   font-family: system-ui, sans-serif;
   line-height: 1.6;
@@ -18,16 +19,37 @@ body {
   gap: 0.75em;
   width: min(90%, 60rem);
   padding: 2em;
+  box-shadow: 0rem 0rem 2.6rem #222;
 }
-
-h2.card__title {
+.card__title {
   color: #e76c00;
+}
+.card__title:hover {
+  box-shadow: inset 0.1rem 0.1rem 0.8rem 0.2rem rgba(229, 216, 212, 0.4666666667);
+  padding-left: 6rem;
 }
 
 .btn {
   display: inline-block;
   padding: 0.5em 1.5em;
   text-decoration: none;
+  border-radius: 0.5rem;
+}
+.btn--primary {
+  background: #e76c00;
+  border: none;
+  color: #fef;
+}
+.btn--outline {
+  background: #ffffff;
+  border: 0.125rem solid #ee4614;
+  color: #e76c00;
+}
+.btn:hover, .btn:focus {
+  background: #000;
+  color: #fef;
+  border: 0.125rem solid #ee4614;
+  box-shadow: 0rem 0rem 0.9rem #e76c00;
 }
 
 .flex-group {
