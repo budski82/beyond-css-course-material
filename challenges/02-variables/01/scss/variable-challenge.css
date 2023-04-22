@@ -20,6 +20,10 @@ body {
   padding: 2em;
 }
 
+h2.card__title {
+  color: #e76c00;
+}
+
 .btn {
   display: inline-block;
   padding: 0.5em 1.5em;
@@ -29,4 +33,6 @@ body {
 .flex-group {
   display: flex;
   gap: 1rem;
-}/*# sourceMappingURL=variable-challenge.css.map */
+}
+
+/*# sourceMappingURL=variable-challenge.css.map */
