@@ -19,16 +19,18 @@ body {
 }
 
 .card {
+  background: $col-n-9;
   display: grid;
   gap: 0.75em;
   width: min(90%, 60rem);
   padding: 2em;
   box-shadow: 0rem 0rem 2.6rem #222;
 
+
     &__title{color:#e76c00;
     
       &:hover{box-shadow:inset 0.1rem 0.1rem 0.8rem .2rem #e5d8d477;
-      padding-left: 6rem;}
+      padding-left: 36.75%;}
     }
 }
 
@@ -40,6 +42,7 @@ body {
   padding: 0.5em 1.5em;
   text-decoration: none;
   border-radius: .5rem;
+  z-index: 100;
 
     &--primary{
       background: #e76c00;
@@ -64,5 +67,5 @@ body {
 
 .flex-group {
   display: flex;
-  gap: 1rem;
+  justify-content: space-around;
 }
